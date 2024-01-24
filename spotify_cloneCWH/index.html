@@ -1,0 +1,160 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify_Clone - Your favourite music is here</title>
+    <link rel="stylesheet" href="style.css" />
+    <!--icon used in the browser tab -->
+    <link rel="icon" type="image/x-icon" href="./bg.PNG" />
+  </head>
+
+  <body>
+    <!-- for navigation bar-->
+    <nav>
+      <ul>
+        <!-- defines logo and text -->
+        <li class="brand"><img src="./bg.PNG" alt="Spotify"/>ShivSangeetam</li>
+      </ul>
+    </nav>
+    <!-- for content area of the webpage -->
+    <div class="container">
+      <div class="songList">
+        <!-- for title of the song list -->
+        <h1>Soul Sanctum: Mahadev's Melodies- No Copyright Sounds</h1>
+        <!--defines the list of songs and their details -->
+        <div class="songItemContainer">
+          <div class="songItem">
+            <img alt="1" />
+            <span class="songName">Adiyogi (The Source of Yoga)</span>
+            <span class="songlistplay"
+              ><span class="timestamp"
+                >06:32
+                <i id="0" class="far songItemPlay fa-play-circle"></i> </span
+            ></span>
+          </div>
+          <div class="songItem">
+            <img alt="1" />
+            <span class="songName">Agam - Kaalbhairav Ashtakam</span>
+            <span class="songlistplay"
+              ><span class="timestamp"
+                >04:35
+                <i id="1" class="far songItemPlay fa-play-circle"></i> </span
+            ></span>
+          </div>
+          <div class="songItem">
+            <img alt="1" />
+            <span class="songName">Agam - NAMASKARATHA MANTRA</span>
+            <span class="songlistplay"
+              ><span class="timestamp"
+                >05:59
+                <i id="2" class="far songItemPlay fa-play-circle"></i> </span
+            ></span>
+          </div>
+          <div class="songItem">
+            <img alt="1" />
+            <span class="songName">BOLO HAR HAR HAR</span>
+            <span class="songlistplay"
+              ><span class="timestamp"
+                >04:55
+                <i id="3" class="far songItemPlay fa-play-circle"></i> </span
+            ></span>
+          </div>
+          <div class="songItem">
+            <img alt="1" />
+            <span class="songName">Har Har Shambhu Shiv Mahadeva (feat. Abhilipsa Panda) </span>
+            <span class="songlistplay"
+              ><span class="timestamp"
+                >05:59
+                <i id="4" class="far songItemPlay fa-play-circle"></i> </span
+            ></span>
+          </div>
+          <div class="songItem">
+            <img alt="1" />
+            <span class="songName">Jagadeesa Sudheesa Parameshwara Stotram</span>
+            <span class="songlistplay"
+              ><span class="timestamp"
+                >04:52
+                <i id="5" class="far songItemPlay fa-play-circle"></i> </span
+            ></span>
+          </div>
+          <div class="songItem">
+            <img alt="1" />
+            <span class="songName">Namo Namo</span>
+            <span class="songlistplay"
+              ><span class="timestamp"
+                >05:28
+                <i id="6" class="far songItemPlay fa-play-circle"></i> </span
+            ></span>
+          </div>
+          <div class="songItem">
+            <img alt="1" />
+            <span class="songName">Om Namah Shivaya (Remix)</span>
+            <span class="songlistplay"
+              ><span class="timestamp"
+                >03:09
+                <i id="7" class="far songItemPlay fa-play-circle"></i> </span
+            ></span>
+          </div>
+          <div class="songItem">
+            <img alt="1" />
+            <span class="songName">Theme of Lord Shiva Powerful Fusion Music</span>
+            <span class="songlistplay"
+              ><span class="timestamp"
+                >03:16
+                <i id="8" class="far songItemPlay fa-play-circle"></i> </span
+            ></span>
+          </div>
+          <div class="songItem">
+            <img alt="1" />
+            <span class="songName">Theme of Maha Shiva</span>
+            <span class="songlistplay"
+              ><span class="timestamp"
+                >07:31
+                <i id="9" class="far songItemPlay fa-play-circle"></i> </span
+            ></span>
+          </div>
+        </div>
+      </div>
+      <div class="songBanner"></div>
+    </div>
+
+    <!-- A bottom div for displaying song controls -->
+    <div class="bottom">
+      <!-- A progress bar input element -->
+      <input
+        type="range"
+        name="range"
+        id="myProgressBar"
+        min="0"
+        value="0"
+        max="100"
+      />
+      <!-- A container div for fontawesome icons -->
+      <div class="icons">
+        <!-- A fontawesome icon for previous song -->
+        <i class="fas fa-3x fa-step-backward" id="previous"></i>
+        <!-- A fontawesome icon for playing/pausing the current song -->
+        <i class="far fa-3x fa-play-circle" id="masterPlay"></i>
+        <!-- A fontawesome icon for next song -->
+        <i class="fas fa-3x fa-step-forward" id="next"></i>
+      </div>
+      <!-- A div for displaying the current song information -->
+      <div class="songInfo">
+        <!-- An image of a playing animation -->
+        <img src="playing.gif" width="42px" alt="" id="gif" />
+        <!-- The name of the currently playing song -->
+        <span id="masterSongName">Adiyogi (The Source of Yoga)</span>
+      </div>
+    </div>
+    <!-- A script tag for including a JavaScript file -->
+    <script src="script.js"></script>
+    <!-- A script tag for including the fontawesome icon library -->
+    <script
+      src="https://kit.fontawesome.com/26504e4a1f.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
